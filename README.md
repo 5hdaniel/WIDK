@@ -8,6 +8,7 @@ If you have any questions feel free to reach out. In it's current configuration 
 To get the script working:
 1. Create a note on the notes app called WIDK (to name a note just have WIDK on a line of its own at the beginning of the note)
 
+
 2. Save the script to your computer using automator. 
 you can either download the WIDK file and place it in the Library/Services folder or follow steps 2.1 - 2.6
 
@@ -22,6 +23,7 @@ you can either download the WIDK file and place it in the Library/Services folde
   2.5 Drag and drop into the editor on the right
 
   2.6 Paste the script from the WIDK file and save under the name WIDK 
+
 
 3. Enable the WIDK shortcut 
 
@@ -48,7 +50,9 @@ you can either download the WIDK file and place it in the Library/Services folde
 
   5.4 enable automator
 
+
 6. You're done !
+
 7. You might be promoted to approve permission for each app you use the shortcut from.
 
 
