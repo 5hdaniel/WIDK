@@ -1,5 +1,5 @@
 # WIDK
-# created by Daniel Haim
+## Created by Daniel Haim
 
 WIDK - Word I Don't Know is a short apple script that lets you assign a keyboard shortcut to automatically add a portion of highlighted text to a note in the mac bulletin notes app.
 If you have any questions feel free to reach out. In it's current configuration the script is set to add the word to a note names "WIDK". 
