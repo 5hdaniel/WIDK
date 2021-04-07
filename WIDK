@@ -1,0 +1,32 @@
+on run {input, parameters}
+	
+	-- Back up clipboard contents:
+	set savedClipboard to the clipboard
+	
+	-- Copy selected text to clipboard:
+	tell application "System Events" to keystroke "c" using {command down}
+	delay 1 -- Without this, the clipboard may have stale data.
+	
+	-- remove formmating of the selected text that was copied onto the clipboard 
+	-- and set it to a temp var called noteHTMLText whice later be 
+	-- concatnted onto the body of the note
+	set noteHTMLText to "<pre style=\"font-family:Helvetica,sans-serif;\">" & ¬
+		(the clipboard as Unicode text) & "</pre>"
+	
+	-- Restore clipboard:
+	set the clipboard to savedClipboard
+	
+	tell application "Notes"
+		tell account "iCloud"
+			tell folder "Notes"
+				set currentBody to get body of note "WIDK"
+				set body of note "WIDK" to currentBody & noteHTMLText
+			end tell
+		end tell
+	end tell
+	beep 2 -- remove this line if you don't like the beep
+	return input
+end run
+
+
+
